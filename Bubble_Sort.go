@@ -1,3 +1,4 @@
+// algo pertama
 package main
 
 import (
