@@ -18,25 +18,16 @@ func bubbleSortIterative(arr []int) {
 }
 
 func bubbleSortIterative(arr []int, n int, i int) {
-    // Base Case: If the unsorted portion size is 1, we are done
     if n == 1 {
         return
     }
-
-    // Inner Recursion Base Case: 
-    // If we've reached the end of the current pass (i == n-1)
-    // start a new pass with n-1 and reset index i to 0
     if i == n-1 {
         bubbleSortPure(arr, n-1, 0)
         return
     }
-
-    // Comparison and Swap logic
     if arr[i] > arr[i+1] {
         arr[i], arr[i+1] = arr[i+1], arr[i]
     }
-
-    // Inner Recursion: Move to the next index in the current pass
     bubbleSortPure(arr, n, i+1)
 }
 
