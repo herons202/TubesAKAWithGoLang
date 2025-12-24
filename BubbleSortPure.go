@@ -17,7 +17,7 @@ func bubbleSortIterative(arr []int) {
 	}
 }
 
-func bubbleSortIterative(arr []int, n int, i int) {
+func bubbleSortRecursive(arr []int, n int, i int) {
     if n == 1 {
         return
     }
